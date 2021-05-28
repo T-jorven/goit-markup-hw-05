@@ -587,17 +587,17 @@ img {
   border-radius: 4px;
 }
 .icon-close {
- 
- 
-
-}
-.close-button {
-  border: none;
    position: absolute;
   left: 490px;
   top: 8px;
   right: 8px;
 }
+ 
+
+}
+.close-button {
+  border: none;
+} 
 .product-animation {
   position: relative;
 }
