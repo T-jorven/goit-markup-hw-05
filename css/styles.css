@@ -54,7 +54,8 @@ img {
 .current-page.link,
 .nav-item.link,
 .contact.link,
-.contact-footer.link {
+.contact-footer.link,
+.portfolio-link {
   text-decoration: none;
 }
 /* header */
@@ -269,14 +270,18 @@ img {
   color: var(--clear-white);
   position: absolute;
   background-color: rgba(47, 48, 58, 0.8);
+
+  bottom: 0;
   left: 30px;
-  width: 100%;
+  width: 370px;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.overview-text{
+ margin-right: -30px;
+}
 /*TEAM SECTION*/
 .team-section {
   background-color: var(--button-sorting);
@@ -416,6 +421,12 @@ img {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
 .portfolio-flex {
   display: flex;
   flex-wrap: wrap;
@@ -542,7 +553,7 @@ img {
 }
 /*end of svgs*/
 
-/*
+
 
 .backdrop {
   position: fixed;
@@ -553,7 +564,11 @@ img {
   right: 0;
   background-color: var(--backdrop);
 }
-
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility:hidden;
+}
 .modal {
   position: absolute;
   width: 528px;
@@ -571,7 +586,43 @@ img {
   margin-right: 8px;
   margin-top: 8px;
   margin-left: 490px;
+}
+.product-animation {
+  position: relative;
+}
+.overlay {
+  display:inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+ 
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover .overlay {
+  transform: translateY(0%);
+  opacity: 1;
 
-*/
-
+}
+.portfolio-item {
+  overflow: hidden;
+}
+.product-animation {
+  overflow: hidden;
+}
+.item-description {
+  width: 322px;
+  height: 168px;
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
 }
