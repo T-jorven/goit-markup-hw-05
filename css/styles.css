@@ -587,15 +587,16 @@ img {
   border-radius: 4px;
 }
 .icon-close {
-  position: absolute;
-  left: 490px;
-  top: 8px;
-  right: 8px;
+ 
  
 
 }
 .close-button {
   border: none;
+   position: absolute;
+  left: 490px;
+  top: 8px;
+  right: 8px;
 }
 .product-animation {
   position: relative;
