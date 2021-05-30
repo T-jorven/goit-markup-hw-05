@@ -664,4 +664,5 @@ img {
   padding-top: 63px;
   padding-left: 24px;
   padding-bottom: 24px;
+  overflow: auto;
 }
