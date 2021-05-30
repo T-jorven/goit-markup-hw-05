@@ -165,7 +165,7 @@ img {
 /* End of header */
 /* hero */
 .hero {
-
+  background-color: var(--hero-background);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
