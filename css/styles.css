@@ -98,6 +98,7 @@ img {
   left: 0;
   right: 0;
   bottom: -1px;
+  border-radius: 2px;
 }
 .nav-item {
   color: var(--title-text-color);
@@ -164,7 +165,7 @@ img {
 /* End of header */
 /* hero */
 .hero {
-  background-color: var(--hero-background);
+  background-color: var(--clear-white);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -661,6 +662,6 @@ img {
   font-size: 18px;
   line-height: 1.5;
   padding-top: 63px;
-  padding-bottom: 63px;
   padding-left: 24px;
+  padding-bottom: 24px;
 }
